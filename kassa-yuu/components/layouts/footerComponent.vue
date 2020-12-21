@@ -1,39 +1,5 @@
 <template>
   <div>
-
-
-    
-    <!-- <v-main>
-      <h1 class="text-center h2" id="title">刮痧について</h1>
-      
-      <div class="container" id="text-zone">
-        
-        <div class="row">
-          
-          <div class="col-lg-5 w-75 mx-auto">
-            <img src="img/desc-about-kassa.JPG" alt="" srcset="" class="d-block w-100 h-100 rounded">
-          </div>
-          
-          <div class="col-lg-7 w-75 m-auto">
-            <p><ruby><rb>刮痧</rb><rp>（</rp><rt>※グアシャ</rt><rp>）</rp></ruby>は中国で古くから伝わる、
-              <ruby><rb>東洋医学</rb><rt>※</rt></ruby>を基礎とした治療法です。</p>
-              <p>これを日本式にアレンジし女性の優しさ・柔らかさをイメージした<br>
-                ひらがな表記「かっさ」は、「かっさの名付け親」島田 <ruby><rb>淑子</rb><rp>（</rp><rt>すみこ</rt><rp>）</rp></ruby>先生考案の<br>
-                オリジナルメソッドです。</p>
-                <p>気、血、水の通り道（経路）に圧を加えて滞りを流し、<br>
-                  精神面・肉体面にアプローチできる、リラクゼーショントリートメントです。</p>
-                  <p class="h7 font-weight-light">
-                  <ruby><rb>刮</rb><rt>※かつ</rt></ruby>…けずる・こする<br>
-                  <ruby><rb>痧</rb><rt>さ</rt></ruby>…<ruby><rb>瘀血</rb><rp>（</rp><rt>おけつ</rt><rp>）</rp></ruby>（滞って流れなくなった血液の毒）<br>
-                  <ruby><rb>東洋医学</rb><rt>※</rt></ruby>：中国の伝統医学。不調の原因をパーソナルに見立ててアプローチします。
-              </p>
-            </div>
-            
-          </div>
-          
-        </div>
-      </v-main>
-      
         <v-bottom-navigation :value="value" grow color="pink" :height="breakPoint">
           <div class="container">
             <div class="row">
@@ -61,7 +27,7 @@
                       </div>
                       <div class="col-4">
                         <a href="https://ameblo.jp/yuu-kassa/">
-                          <p class="text-success">Ameba</p>
+                          <p id="Ameba">Ameba</p>
                         </a>
                       </div>
                     </div>
@@ -92,10 +58,94 @@
             </div>
           </div>
         </v-bottom-navigation>
-        
-        <v-footer height="60" dark class="p-0 text-h4">
-          <small class="m-auto" id="footer-letters">©2020 kassa-yuu</small>
-        </v-footer> -->
 
+    <v-footer  color="black" height="40px" >
+      <p class="text-center mb-0 text-h5" id="footer-text">
+      ©{{ new Date().getFullYear() }} kassa-yuu
+      </p>
+    </v-footer>
   </div>
 </template>
+
+<style lang="scss" scoped>
+
+  #footer-text {
+    width: 100%;
+    color: white;
+  }
+
+#Ameba {
+  height: 60px;
+  width: 60px;
+  color: white;
+  background-color: green;
+}
+
+</style>
+
+<script>
+//   if (process.client) {
+//     function initMap() {
+//   const mapBox = document.getElementById("map-box");
+//   var map;
+//   var salon = {
+//     lat: 35.2896889,
+//     lng: 139.1335604,
+//   };
+//   var marker;
+
+//   map = new google.maps.Map(mapBox, {
+//     center: salon,
+//     zoom: 15,
+//   });
+
+//   var marker = new google.maps.Marker({
+//     position: salon,
+//     map: map,
+//     animation: google.maps.Animation.DROP, 
+//   });
+// }
+  // }
+
+export default {
+  data(){
+    return {
+      value: 1
+    }
+  },
+    computed: {
+    breakPoint() {
+      let bP = this.$vuetify.breakpoint.name;
+      if (bP === "xs") {
+        return "1000px";
+      } else if (bP === "sm") {
+        return "500px";
+      } else {
+        return "500px";
+      }
+    },
+    cardBreakPoint() {
+      let bP = this.$vuetify.breakpoint.name;
+      if (bP === "xs") {
+        return "300px";
+      } else if (bP === "sm") {
+        return "400px";
+      } else {
+        return "400px";
+      }
+    },
+    cardWidthBreakPoint() {
+      let bP = this.$vuetify.breakpoint.name;
+      if (bP === "xs") {
+        return "400px";
+      } else if (bP === "sm") {
+        return "216px";
+      } else {
+        return "370px";
+      }
+    },
+  },
+
+}
+
+</script>

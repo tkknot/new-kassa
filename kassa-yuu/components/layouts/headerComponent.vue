@@ -4,11 +4,12 @@
   <v-navigation-drawer app v-model="drawer" temporary color="rgba(250, 221, 205, 1)">
     <v-list>
       <v-list-item nuxt to="/" class="my-4">かっさとは</v-list-item>
-      <v-list-item nuxt to="/" class="my-4">当サロン</v-list-item>
-      <v-list-item nuxt to="/" class="my-4">セラピスト</v-list-item> 
-      <v-list-item nuxt to="/" class="my-4">施術について</v-list-item>
-      <v-list-item nuxt to="/" class="my-4">温かっさ</v-list-item>
-      <v-list-item nuxt to="/" class="my-4">セルフかっさ</v-list-item>
+      <v-list-item nuxt to="/salon" class="my-4">当サロン</v-list-item>
+      <v-list-item nuxt to="/therapist" class="my-4">セラピスト</v-list-item> 
+      <v-list-item nuxt to="/treatment" class="my-4">施術について</v-list-item>
+      <v-list-item nuxt to="/heat" class="my-4">温かっさ</v-list-item>
+      <v-list-item nuxt to="/seminar" class="my-4">セルフかっさ</v-list-item>
+      <v-list-item nuxt to="/caution" class="my-4">注意事項</v-list-item>
     </v-list>
   </v-navigation-drawer> 
 

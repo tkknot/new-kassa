@@ -4,7 +4,7 @@
 
     <v-main>
       <v-container>
-        <!-- <nuxt /> -->
+        <nuxt />
       </v-container>
     </v-main>
 

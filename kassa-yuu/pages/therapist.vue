@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center text-h2 my-12">セラピストの紹介</h1>
+    <h1 class="text-center text-h3 my-12">セラピストの紹介</h1>
 
     <v-container class="mb-10">
       <h2 class="mb-12 font-weight-normal">
@@ -13,8 +13,8 @@
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
-          <h2 class="mb-9">武田　絵美</h2>
-          <h3>経歴</h3>
+          <h2 class="mb-10">武田　絵美</h2>
+          <h3 class="mb-3">経歴</h3>
           <p class="text-h6">
             1974年神奈川県真鶴町生まれ。小田原市在住。<br />
             JA勤務後、21歳で結婚。<br />

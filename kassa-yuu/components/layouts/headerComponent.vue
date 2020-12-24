@@ -45,7 +45,6 @@
   transform: translateY(-50%) translateX(-50%);
   width: 100%;
   color: white;
-  font-family: "Noto Serif JP", serif;
 }
 
 .v-expansion-panel-content__wrap {

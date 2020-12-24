@@ -70,12 +70,3 @@ export default {
   }, 
 
 }
-
-module.exports = {
-  modules: ['@nuxtjs/style-resources'],
-  styleResources: {
-   scss: [
-    '~/assets/scss/_index.scss'
-    ]
-  }
-}

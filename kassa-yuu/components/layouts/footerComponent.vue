@@ -101,6 +101,20 @@
   </div>
 </template>
 
+<style lang="scss" scoped>
+#footer-text {
+  width: 100%;
+  color: white;
+}
+
+#Ameba {
+  height: 60px;
+  width: 60px;
+  color: white;
+  background-color: green;
+}
+</style>
+
 <script>
 export default {
   data() {

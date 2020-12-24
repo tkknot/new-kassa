@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1 class="text-center text-h3">下記説明をよくお読みください</h1>
+    <h1 class="text-center text-h3  my-12 red accent-3 rounded-lg"><span class="white--text">下記説明をよくお読みください</span></h1>
 
-    <v-container>
+    <v-container class="mb-10">
       <v-row>
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
-          <v-card>
-            <v-card-title>
+          <v-card height="300">
+            <v-card-title >
               <span class="font-weight-bold"
                 >次のような状態にある方は、かっさの使用ができません</span
               >
@@ -27,7 +27,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
-          <v-card>
+          <v-card height="300">
             <v-card-title>
               <span class="font-weight-bold">
                 次のような状態にある方は「ご本人同意」のもと、<br />かっさの使用が可能です
@@ -41,7 +41,7 @@
               <li>動脈硬化の方</li>
               <li>静脈瘤がある場所</li>
             </ul>
-            <p class="text-h6 ml-3">
+            <p class="text-h6 ml-3 my-3">
               ※持病のある方は、かかりつけの医師にご相談ください
             </p>
           </v-card>

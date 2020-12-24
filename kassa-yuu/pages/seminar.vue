@@ -2,11 +2,11 @@
   <div>
     <h1 class="text-center text-h3 my-12">自宅でできるセルフかっさセミナー</h1>
 
-    <p class="text-center text-h5">
+    <p class="text-center text-h5 red--text accent-2">
       ※かっさプレートが品薄のため、現在は受付を終了しています。
     </p>
 
-    <v-container>
+    <v-container class="mb-10">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
           <v-img src="img/_J6A0109.JPG" class="rounded-xl"></v-img>
@@ -32,10 +32,10 @@
       </v-row>
     </v-container>
 
-    <v-container>
+    <v-container class="mb-10">
       <v-row>
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
-          <v-card color="white" elevation="8">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">受講時間</h2>
             <div class="text-center">
               <i class="far fa-clock fa-5x pb-3"></i>
@@ -44,7 +44,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
-          <v-card color="white" elevation="8">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">受講料</h2>
             <div class="text-center">
               <i class="fas fa-wallet fa-5x pb-3"></i>
@@ -53,7 +53,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
-          <v-card color="white" elevation="8">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">その他</h2>
             <div class="text-center">
               <i class="fas fa-gift fa-5x pb-3"></i>
@@ -67,3 +67,20 @@
     </v-container>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    threeCardBreakPoint() {
+      let bP = this.$vuetify.breakpoint.name;
+      if (bP === "xs") {
+        return "260px";
+      } else if (bP === "sm") {
+        return "300px";
+      } else {
+        return "300px";
+      }
+    }
+  }
+};
+</script>

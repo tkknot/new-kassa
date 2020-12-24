@@ -10,19 +10,23 @@
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
           <p class="text-h6">
-            温めたかっさプレートを使って、身体の芯から温めながら全身を施術する、100分のトリートメントです。<br />
-            温かいトリートメントですが、女性特有のお悩みにアプローチできる温かっさは、季節を問わず人気です。<br />
-            また、かっさプレートの心地良い温かさは、心をゆるめ、
+            温めたかっさプレートを使って、身体の芯から温めながら全身を施術する、100分のトリートメントです。
+          </p>
+          <p class="text-h6">
+            温かいトリートメントですが、女性特有のお悩みにアプローチできる温かっさは、季節を問わず人気です。
+          </p>
+          <p class="text-h6">
+            また、かっさプレートの心地良い温かさは、心をゆるめ、<br />
             経絡に沿ってじっくり施術することで、リラクゼーション以上の満足感を得ることが期待できます。
           </p>
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container>
+    <v-container class="mb-10">
       <v-row>
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
-          <v-card color="white" elevation="8">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">所要時間</h2>
             <div class="text-center">
               <i class="far fa-clock fa-5x pb-3"></i>
@@ -34,7 +38,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
-          <v-card color="white" elevation="8">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">施術料</h2>
             <div class="text-center">
               <i class="fas fa-wallet fa-5x pb-3"></i>
@@ -43,7 +47,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
-          <v-card color="white" elevation="8">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">誕生月割引！</h2>
             <div class="text-center">
               <i class="fas fa-birthday-cake fa-5x pb-3"></i>
@@ -56,10 +60,15 @@
 
     <h1 class="text-center text-h3 my-12">施術の流れ</h1>
 
-    <v-container>
+    <v-container class="mb-10">
       <v-row>
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
-          <v-card max-width="400" class="mx-auto" elevation="12">
+          <v-card
+            max-width="400"
+            class="mx-auto"
+            elevation="12"
+            :height="workCardBreakPoint"
+          >
             <v-img
               src="/img/aloma.JPG"
               max-height="300"
@@ -73,7 +82,12 @@
           </v-card>
         </v-col>
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
-          <v-card max-width="400" class="mx-auto" elevation="12">
+          <v-card
+            max-width="400"
+            class="mx-auto"
+            elevation="12"
+            :height="workCardBreakPoint"
+          >
             <v-img
               src="/img/IMG_0075.JPG"
               max-height="300"
@@ -87,10 +101,15 @@
       </v-row>
     </v-container>
 
-    <v-container>
+    <v-container class="mb-10">
       <v-row>
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
-          <v-card max-width="400" class="mx-auto" elevation="12">
+          <v-card
+            max-width="400"
+            class="mx-auto"
+            elevation="12"
+            :height="workCardBreakPoint"
+          >
             <v-img
               src="/img/workflow2.JPG"
               max-height="300"
@@ -102,7 +121,12 @@
           </v-card>
         </v-col>
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
-          <v-card max-width="400" class="mx-auto" elevation="12">
+          <v-card
+            max-width="400"
+            class="mx-auto"
+            elevation="12"
+            :height="workCardBreakPoint"
+          >
             <v-img src="/img/tea.JPG" max-height="300" max-width="400"></v-img>
             <p class="text-h6 px-5 pt-2">
               施術後はかっさとの相乗効果を考えた
@@ -115,3 +139,30 @@
     </v-container>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    threeCardBreakPoint() {
+      let bP = this.$vuetify.breakpoint.name;
+      if (bP === "xs") {
+        return "260px";
+      } else if (bP === "sm") {
+        return "300px";
+      } else {
+        return "300px";
+      }
+    },
+    workCardBreakPoint() {
+      let bP = this.$vuetify.breakpoint.name;
+      if (bP === "xs") {
+        return "340px";
+      } else if (bP === "sm") {
+        return "500px";
+      } else {
+        return "500px";
+      }
+    }
+  }
+};
+</script>

@@ -29,31 +29,6 @@
 </div>
 </template>
 
-<style lang="scss" scoped>
-
-#ccbox{
-  position: relative;
-}
-
-#catchcopy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  width: 100%;
-  color: white;
-  font-family: "Noto Serif JP", serif;
-}
-
-.v-expansion-panel-content__wrap {
-  & > a{
-    padding: 0;
-    width: 100%;
-  }
-}
-
-</style>
-
 <script>
 export default {
     data() {

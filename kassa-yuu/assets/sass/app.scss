@@ -15,3 +15,9 @@ p {
 li {
   font-family: "Noto Serif", serif;
 }
+
+@media screen and (min-width: 480px) {
+  #br {
+    display: none;
+  }
+}

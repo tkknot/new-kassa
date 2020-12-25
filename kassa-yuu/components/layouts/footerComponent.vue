@@ -149,7 +149,7 @@ export default {
         case "xs":
           return 300;
         default:
-          return 500
+          return 400
       }
     },
     cardWidthBreakPoint() {

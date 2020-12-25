@@ -1,30 +1,36 @@
 <template>
   <div>
-    <h1 class="text-center text-h3 my-12">自宅でできるセルフかっさセミナー</h1>
+    <h1
+      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+    >
+      自宅でできる<br id="br" />セルフかっさセミナー
+    </h1>
 
-    <p class="text-center text-h5 red--text accent-2">
-      ※かっさプレートが品薄のため、現在は受付を終了しています。
+    <p
+      class="text-center text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 red--text accent-2"
+    >
+      ※かっさプレートが品薄のため、<br id="br" />現在は受付を終了しています。
     </p>
 
-    <v-container class="mb-10">
+    <v-container class="my-10">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
           <v-img src="img/_J6A0109.JPG" class="rounded-xl"></v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
-          <p class="text-h6">
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
             日頃のセルフケアとして、ボディかっさマッサージを習得していただけるセミナーです。<br />
             病院へ行くほどではない身体の不調の改善法、スリミング効果のあるマッサージの仕方をお伝えします。
           </p>
           <ul>
-            <li class="text-h6">
+            <li class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
               温かっさトリートメントを受けられた方は、サロンにてマンツーマンレッスン可能です。
             </li>
-            <li class="text-h6">
+            <li class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
               多人数でのセミナーのご依頼も承ります。（別途交通費・出張料がかかります。）お気軽にご相談ください。
             </li>
-            <li class="text-h6">
+            <li class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
               服装は首周りのスッキリとした上衣、下衣はパンツスタイルでお願い致します
             </li>
           </ul>
@@ -59,7 +65,7 @@
               <i class="fas fa-gift fa-5x pb-3"></i>
             </div>
             <v-card-text class="text-h7"
-              >左記金額に、プレート代及びテキスト代を含んでおります。</v-card-text
+              >金額にプレート代及びテキスト代を含んでおります。</v-card-text
             >
           </v-card>
         </v-col>

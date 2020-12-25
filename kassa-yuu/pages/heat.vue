@@ -1,21 +1,25 @@
 <template>
   <div>
-    <h1 class="text-center text-h3 my-12">温かっさトリートメント</h1>
+    <h1
+      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+    >
+      温かっさトリートメント
+    </h1>
 
-    <v-container class="mb-10">
+    <v-container class="my-10">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
           <v-img src="/img/_L0A0002.JPG" class="rounded-xl"> </v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
-          <p class="text-h6">
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
             温めたかっさプレートを使って、身体の芯から温めながら全身を施術する、100分のトリートメントです。
           </p>
-          <p class="text-h6">
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
             温かいトリートメントですが、女性特有のお悩みにアプローチできる温かっさは、季節を問わず人気です。
           </p>
-          <p class="text-h6">
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
             また、かっさプレートの心地良い温かさは、心をゆるめ、<br />
             経絡に沿ってじっくり施術することで、リラクゼーション以上の満足感を得ることが期待できます。
           </p>
@@ -58,7 +62,11 @@
       </v-row>
     </v-container>
 
-    <h1 class="text-center text-h3 my-12">施術の流れ</h1>
+    <h1
+      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+    >
+      施術の流れ
+    </h1>
 
     <v-container class="mb-10">
       <v-row>
@@ -74,7 +82,9 @@
               max-height="300"
               max-width="400"
             ></v-img>
-            <p class="text-h6 px-5 pt-2">
+            <p
+              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
+            >
               必要事項をシートにご記入いただき、カウンセリングをしていきます。<br />
               その後、五臓に合わせた5種類のメディカルアロマオイルの中から、
               その日の気分に合わせてアロマオイルをお選びいただきます。
@@ -93,7 +103,9 @@
               max-height="300"
               max-width="400"
             ></v-img>
-            <p class="text-h6 px-5 pt-2">
+            <p
+              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
+            >
               サロンでご用意したウェアに着替えていただきます。
             </p>
           </v-card>
@@ -115,7 +127,9 @@
               max-height="300"
               max-width="400"
             ></v-img>
-            <p class="text-h6 px-5 pt-2">
+            <p
+              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
+            >
               頭頂部から足先まで、約100分の施術を行います。
             </p>
           </v-card>
@@ -128,7 +142,9 @@
             :height="workCardBreakPoint"
           >
             <v-img src="/img/tea.JPG" max-height="300" max-width="400"></v-img>
-            <p class="text-h6 px-5 pt-2">
+            <p
+              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
+            >
               施術後はかっさとの相乗効果を考えた
               「かっさyuuオリジナル和漢植物ブレンド茶」（いわしや製）
               でおくつろぎください。
@@ -154,7 +170,7 @@ export default {
     workCardBreakPoint() {
       switch (this.$vuetify.breakpoint.name) {
         case "xs":
-          return 340;
+          return 380;
         default:
           return 500;
       }

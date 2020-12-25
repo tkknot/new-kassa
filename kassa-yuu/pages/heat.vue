@@ -144,23 +144,19 @@
 export default {
   computed: {
     threeCardBreakPoint() {
-      let bP = this.$vuetify.breakpoint.name;
-      if (bP === "xs") {
-        return "260px";
-      } else if (bP === "sm") {
-        return "300px";
-      } else {
-        return "300px";
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 260;
+        default:
+          return 300;
       }
     },
     workCardBreakPoint() {
-      let bP = this.$vuetify.breakpoint.name;
-      if (bP === "xs") {
-        return "340px";
-      } else if (bP === "sm") {
-        return "500px";
-      } else {
-        return "500px";
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 340;
+        default:
+          return 500;
       }
     }
   }

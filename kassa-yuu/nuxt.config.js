@@ -12,8 +12,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap"},
       { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap"},
+      { rel:"stylesheet", href:"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"}
     ],
     script: [
       {src:"https://kit.fontawesome.com/52d0ef7a7b.js"},

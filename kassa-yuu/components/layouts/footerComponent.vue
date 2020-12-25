@@ -136,33 +136,30 @@ export default {
   },
   computed: {
     breakPoint() {
-      let bP = this.$vuetify.breakpoint.name;
-      if (bP === "xs") {
-        return "1000px";
-      } else if (bP === "sm") {
-        return "500px";
-      } else {
-        return "500px";
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 1000;
+        default:
+          return 500
       }
     },
     cardBreakPoint() {
       let bP = this.$vuetify.breakpoint.name;
-      if (bP === "xs") {
-        return "300px";
-      } else if (bP === "sm") {
-        return "400px";
-      } else {
-        return "400px";
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 300;
+        default:
+          return 500
       }
     },
     cardWidthBreakPoint() {
-      let bP = this.$vuetify.breakpoint.name;
-      if (bP === "xs") {
-        return "400px";
-      } else if (bP === "sm") {
-        return "216px";
-      } else {
-        return "370px";
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 400;
+        case "sm":
+          return 220;
+        default:
+          return 370
       }
     }
   }

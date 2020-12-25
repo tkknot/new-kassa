@@ -15,15 +15,22 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar hide-on-scroll height="340" color="rgba(250, 221, 205, 1);">
+    <v-app-bar
+      hide-on-scroll
+      :height="headerHeight"
+      color="rgba(250, 221, 205, 1);"
+    >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-container fluid>
         <v-row no-gutters>
-          <v-col cols="5">
-            <v-img src="/img/logo-new.jpg" height="340"></v-img>
+          <v-col cols="12" xl="5" lg="5" md="5" sm="5">
+            <v-img src="/img/logo-new.jpg" :height="headerHeight"></v-img>
           </v-col>
-          <v-col cols="7" id="ccbox">
-            <span id="catchcopy" class="text-h2 text-center">
+          <v-col cols="12" xl="7" lg="7" md="7" sm="7" id="ccbox">
+            <span
+              id="catchcopy"
+              class="text-xl-h2 text-lg-h2 text-md-h2 text-sm-h5 text-center"
+            >
               one step ahead in relaxation
             </span>
           </v-col>
@@ -53,6 +60,12 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  #catchcopy {
+    display: none;
+  }
+}
 </style>
 
 <script>
@@ -61,6 +74,16 @@ export default {
     return {
       drawer: null
     };
+  },
+  computed: {
+    headerHeight: function() {
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 240;
+        default:
+          return 340;
+      }
+    }
   }
 };
 </script>

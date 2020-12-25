@@ -1,0 +1,24 @@
+h1 #footer-letters {
+  font-family: "Sawarabi Mincho", "cursive";
+}
+
+h2 {
+  font-family: "Noto Sans", sans-serif;
+}
+
+p {
+  font-family: "Noto Serif", serif;
+  line-height: 120%;
+  display: block;
+}
+
+li {
+  font-family: "Noto Serif", serif;
+}
+
+@media screen and (min-width: 480px) {
+  #br {
+    display: none;
+  }
+}
+/*# sourceMappingURL=app.css.map */

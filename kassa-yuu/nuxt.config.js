@@ -70,4 +70,8 @@ export default {
     transpile: [/^vue2-google-maps($|\/)/]
   }, 
 
+  generate: {
+    fallback: true
+  }
 }
+

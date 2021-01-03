@@ -64,9 +64,10 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    transpile:['gsap'],
     extend(config, ctx) {},
     vendor: ['vue2-google-maps'],
-    transpile: [/^vue2-google-maps($|\/)/]
+    transpile: [/^vue2-google-maps($|\/)/],
   }, 
 
   generate: {

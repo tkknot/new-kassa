@@ -1,19 +1,13 @@
 <template>
   <div>
-    <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
-    >
+    <h1 class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12">
       刮痧について
     </h1>
 
-    <v-container class="mb-10">
+    <v-container class="mb-10" id="reveal-1">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
-          <v-img
-            src="/img/desc-about-kassa.JPG"
-            alt=""
-            class="rounded-xl"
-          ></v-img>
+          <v-img src="/img/desc-about-kassa.JPG" alt="" class="rounded-xl"></v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
@@ -45,13 +39,11 @@
       </v-row>
     </v-container>
 
-    <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
-    >
+    <h1 class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12">
       サロンについて
     </h1>
 
-    <v-container class="mb-10">
+    <v-container class="mb-10" id="reveal-2">
       <v-row>
         <v-col cols="12" xl="7" lg="7" class="pr-8">
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
@@ -76,13 +68,11 @@
       </v-row>
     </v-container>
 
-    <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
-    >
+    <h1 class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12">
       施術について
     </h1>
 
-    <v-container class="mb-10">
+    <v-container class="mb-10" id="reveal-3">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
           <v-img src="/img/room.JPG" class="rounded-xl"></v-img>
@@ -117,3 +107,66 @@
     </v-container>
   </div>
 </template>
+
+<script>
+import { gsap } from "gsap";
+const ScrollTrigger = process.browser ? require("gsap/ScrollTrigger") : undefined;
+
+export default {
+  mounted() {
+    if (process.client) {
+      gsap.registerPlugin(ScrollTrigger);
+      this.scrollSet1();
+      this.scrollSet2();
+      this.scrollSet3();
+      this.scrollItem1();
+      this.scrollItem2();
+      this.scrollItem3();
+    }
+  },
+  methods: {
+    scrollSet1() {
+      gsap.set("#reveal-1", { x: -600, opacity: 0, duration: 1 });
+    },
+    scrollItem1() {
+      gsap.to("#reveal-1", {
+        x: 0,
+        opacity: 1,
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#reveal-1",
+          start: "top center",
+        },
+      });
+    },
+    scrollSet2() {
+      gsap.set("#reveal-2", { x: 600, opacity: 0, duration: 1 });
+    },
+    scrollItem2() {
+      gsap.to("#reveal-2", {
+        x: 0,
+        opacity: 1,
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#reveal-2",
+          start: "top center",
+        },
+      });
+    },
+    scrollSet3() {
+      gsap.set("#reveal-3", { y: 50, opacity: 0, duration: 1 });
+    },
+    scrollItem3() {
+      gsap.to("#reveal-3", {
+        y: 0,
+        opacity: 1,
+        duration: 3,
+        scrollTrigger: {
+          trigger: "#reveal-3",
+          start: "top center",
+        },
+      });
+    },
+  },
+};
+</script>

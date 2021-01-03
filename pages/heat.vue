@@ -9,7 +9,7 @@
     <v-container class="my-10">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
-          <v-img src="/img/_L0A0002.JPG" class="rounded-xl"> </v-img>
+          <v-img src="/img/L0A0002.jpeg" class="rounded-xl"> </v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
@@ -78,7 +78,7 @@
             :height="workCardBreakPoint"
           >
             <v-img
-              src="/img/aloma.JPG"
+              src="/img/aloma.jpeg"
               max-height="300"
               max-width="400"
             ></v-img>
@@ -99,7 +99,7 @@
             :height="workCardBreakPoint"
           >
             <v-img
-              src="/img/IMG_0075.JPG"
+              src="/img/IMG_0075.jpeg"
               max-height="300"
               max-width="400"
             ></v-img>
@@ -123,7 +123,7 @@
             :height="workCardBreakPoint"
           >
             <v-img
-              src="/img/workflow2.JPG"
+              src="/img/workflow2.jpeg"
               max-height="300"
               max-width="400"
             ></v-img>
@@ -141,7 +141,7 @@
             elevation="12"
             :height="workCardBreakPoint"
           >
-            <v-img src="/img/tea.JPG" max-height="300" max-width="400"></v-img>
+            <v-img src="/img/tea.jpeg" max-height="300" max-width="400"></v-img>
             <p
               class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
             >

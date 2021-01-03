@@ -15,7 +15,7 @@
     <v-container class="my-10">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
-          <v-img src="img/_J6A0109.JPG" class="rounded-xl"></v-img>
+          <v-img src="img/J6A0109.jpeg" class="rounded-xl"></v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">

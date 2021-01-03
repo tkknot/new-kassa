@@ -7,7 +7,7 @@
     <v-container class="mb-10" id="reveal-1">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
-          <v-img src="/img/desc-about-kassa.JPG" alt="" class="rounded-xl"></v-img>
+          <v-img src="/img/desc-about-kassa.jpeg" alt="" class="rounded-xl"></v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
@@ -63,7 +63,7 @@
           </p>
         </v-col>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
-          <v-img src="/img/atomo.JPG" class="rounded-xl"></v-img>
+          <v-img src="/img/atomo.jpeg" class="rounded-xl"></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -75,7 +75,7 @@
     <v-container class="mb-10" id="reveal-3">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
-          <v-img src="/img/room.JPG" class="rounded-xl"></v-img>
+          <v-img src="/img/room.jpeg" class="rounded-xl"></v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">

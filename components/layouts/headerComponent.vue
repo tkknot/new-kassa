@@ -24,7 +24,7 @@
       <v-container fluid>
         <v-row no-gutters>
           <v-col cols="12" xl="5" lg="5" md="5" sm="5">
-            <v-img src="/img/logo-new.jpg" :height="headerHeight"></v-img>
+            <v-img src="/img/logo-new.jpeg" :height="headerHeight"></v-img>
           </v-col>
           <v-col cols="12" xl="7" lg="7" md="7" sm="7" id="ccbox">
             <span

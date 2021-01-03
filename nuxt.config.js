@@ -1,34 +1,42 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from "vuetify/es5/util/colors";
 
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'kassa-yuu',
+    title: "kassa-yuu",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "温かっさトリートメントサロン「かっさyuu」。小顔ケアで有名なかっさは全身にも使えます。東洋医学的デトックスでリラクゼーションの一歩先へ。" }
-
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "温かっさトリートメントサロン「かっさyuu」。小顔ケアで有名なかっさは全身にも使えます。東洋医学的デトックスでリラクゼーションの一歩先へ。"
+      }
     ],
     link: [
-      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap"},
-      { rel:"stylesheet", href:"https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"}
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
+      }
     ],
     script: [
-      {src:"https://kit.fontawesome.com/52d0ef7a7b.js"},
-      {src:"https://code.jquery.com/jquery-3.5.1.js"},
+      { src: "https://kit.fontawesome.com/52d0ef7a7b.js" },
+      { src: "https://code.jquery.com/jquery-3.5.1.js" }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-    { src: '~/assets/sass/app.scss', lang: 'scss' },
-  ],
-  
+  css: [{ src: "~/assets/sass/app.scss", lang: "scss" }],
+
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-    {src: "~/plugins/vue2-google-maps.js"}
-  ],
+  plugins: [{ src: "~/plugins/vue2-google-maps.js" }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -36,16 +44,15 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    "@nuxtjs/vuetify"
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-  ],
+  modules: [],
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ["~/assets/variables.scss"],
     theme: {
       dark: false,
       themes: {
@@ -64,14 +71,13 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    transpile:['gsap'],
+    transpile: ["gsap"],
     extend(config, ctx) {},
-    vendor: ['vue2-google-maps'],
-    transpile: [/^vue2-google-maps($|\/)/],
-  }, 
+    vendor: ["vue2-google-maps"],
+    transpile: [/^vue2-google-maps($|\/)/]
+  },
 
   generate: {
     fallback: true
   }
-}
-
+};

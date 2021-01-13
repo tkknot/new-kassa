@@ -4,6 +4,7 @@
       <v-container>
         <v-row>
           <v-col cols="12" xl="4" lg="4" md="4" sm="4">
+            <!-- footer left -->
             <v-card
               :width="cardWidthBreakPoint"
               :height="cardBreakPoint"
@@ -16,6 +17,7 @@
                 電話番号：080-5880-9076<br />
                 メール：kassa.yuu@gmail.com
               </v-card-text>
+
               <v-container>
                 <v-row>
                   <v-col cols="4" class="text-center">
@@ -47,6 +49,7 @@
           </v-col>
 
           <v-col cols="12" xl="4" lg="4" md="4" sm="4">
+            <!-- footer center -->
             <v-card
               :width="cardWidthBreakPoint"
               :height="cardBreakPoint"
@@ -65,7 +68,9 @@
               </v-card-text>
             </v-card>
           </v-col>
-          <v-col cols="12" xl="4" lg="4" md="4" sm="4">
+
+          <v-col cols="12" xl="4" lg="4" md="4" sm="4"
+            ><!-- footer right -->
             <v-card
               :width="cardWidthBreakPoint"
               :height="cardBreakPoint"
@@ -101,20 +106,6 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-#footer-text {
-  width: 100%;
-  color: white;
-}
-
-#Ameba {
-  height: 60px;
-  width: 60px;
-  color: white;
-  background-color: green;
-}
-</style>
-
 <script>
 export default {
   data() {
@@ -140,7 +131,7 @@ export default {
         case "xs":
           return 1000;
         default:
-          return 500
+          return 500;
       }
     },
     cardBreakPoint() {
@@ -149,7 +140,7 @@ export default {
         case "xs":
           return 300;
         default:
-          return 400
+          return 400;
       }
     },
     cardWidthBreakPoint() {
@@ -159,9 +150,23 @@ export default {
         case "sm":
           return 220;
         default:
-          return 370
+          return 370;
       }
     }
   }
 };
 </script>
+
+<style lang="scss" scoped>
+#footer-text {
+  width: 100%;
+  color: white;
+}
+
+#Ameba {
+  height: 60px;
+  width: 60px;
+  color: white;
+  background-color: green;
+}
+</style>

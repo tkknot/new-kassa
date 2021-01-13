@@ -1,13 +1,19 @@
 <template>
   <div>
-    <h1 class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12">
+    <h1
+      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+    >
       刮痧について
     </h1>
 
     <v-container class="mb-10" id="reveal-1">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
-          <v-img src="/img/desc-about-kassa.jpeg" alt="" class="rounded-xl"></v-img>
+          <v-img
+            src="/img/desc-about-kassa.jpeg"
+            alt=""
+            class="rounded-xl"
+          ></v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
@@ -39,7 +45,9 @@
       </v-row>
     </v-container>
 
-    <h1 class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12">
+    <h1
+      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+    >
       サロンについて
     </h1>
 
@@ -62,13 +70,16 @@
             このような広い意味もあり、大変気に入っています。
           </p>
         </v-col>
+
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
           <v-img src="/img/atomo.jpeg" class="rounded-xl"></v-img>
         </v-col>
       </v-row>
     </v-container>
 
-    <h1 class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12">
+    <h1
+      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+    >
       施術について
     </h1>
 
@@ -109,8 +120,11 @@
 </template>
 
 <script>
+// scroll animation
 import { gsap } from "gsap";
-const ScrollTrigger = process.browser ? require("gsap/ScrollTrigger") : undefined;
+const ScrollTrigger = process.browser
+  ? require("gsap/ScrollTrigger")
+  : undefined;
 
 export default {
   mounted() {
@@ -135,8 +149,8 @@ export default {
         duration: 2,
         scrollTrigger: {
           trigger: "#reveal-1",
-          start: "top center",
-        },
+          start: "top center"
+        }
       });
     },
     scrollSet2() {
@@ -149,8 +163,8 @@ export default {
         duration: 2,
         scrollTrigger: {
           trigger: "#reveal-2",
-          start: "top center",
-        },
+          start: "top center"
+        }
       });
     },
     scrollSet3() {
@@ -163,10 +177,10 @@ export default {
         duration: 3,
         scrollTrigger: {
           trigger: "#reveal-3",
-          start: "top center",
-        },
+          start: "top center"
+        }
       });
-    },
-  },
+    }
+  }
 };
 </script>

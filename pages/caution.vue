@@ -9,6 +9,7 @@
     <v-container class="mb-10">
       <v-row>
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
+          <!-- caution left -->
           <v-card :height="cautionCardHeight">
             <v-card-title>
               <span class="font-weight-bold"
@@ -17,6 +18,7 @@
                 />かっさの使用ができません</span
               >
             </v-card-title>
+
             <ul class="ml-3">
               <li
                 class=" text-xl-h7 text-lg-h7 text-md-h7 text-sm-h7 text-h10 my-12"
@@ -62,8 +64,10 @@
             </ul>
           </v-card>
         </v-col>
+
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
           <v-card :height="cautionCardHeight">
+            <!-- caution right -->
             <v-card-title>
               <span class="font-weight-bold">
                 次のような状態にある方は<br
@@ -71,6 +75,7 @@
                 />「ご本人同意」のもと、<br />かっさの使用が可能です
               </span>
             </v-card-title>
+
             <ul class="ml-3">
               <li
                 class=" text-xl-h7 text-lg-h7 text-md-h7 text-sm-h7 text-h10 my-12"
@@ -103,6 +108,7 @@
                 静脈瘤がある場所
               </li>
             </ul>
+
             <p class="text-h6 ml-3 my-3">
               ※持病のある方は、かかりつけの医師にご相談ください
             </p>

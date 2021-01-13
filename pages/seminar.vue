@@ -23,6 +23,7 @@
             日頃のセルフケアとして、ボディかっさマッサージを習得していただけるセミナーです。<br />
             病院へ行くほどではない身体の不調の改善法、スリミング効果のあるマッサージの仕方をお伝えします。
           </p>
+
           <ul>
             <li class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
               温かっさトリートメントを受けられた方は、サロンにてマンツーマンレッスン可能です。
@@ -49,6 +50,7 @@
             <v-card-text class="text-center text-h6">約2時間</v-card-text>
           </v-card>
         </v-col>
+
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
           <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">受講料</h2>
@@ -58,6 +60,7 @@
             <v-card-text class="text-center text-h6">13000円</v-card-text>
           </v-card>
         </v-col>
+
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
           <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">その他</h2>

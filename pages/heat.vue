@@ -41,6 +41,7 @@
             </v-card-text>
           </v-card>
         </v-col>
+
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
           <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">施術料</h2>
@@ -50,6 +51,7 @@
             <v-card-text class="text-center text-h6">10000円</v-card-text>
           </v-card>
         </v-col>
+
         <v-col cols="12" xl="4" lg="4" md="4" sm="4">
           <v-card color="white" elevation="8" :height="threeCardBreakPoint">
             <h2 class="text-center py-7">誕生月割引！</h2>
@@ -91,6 +93,7 @@
             </p>
           </v-card>
         </v-col>
+
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
           <v-card
             max-width="400"
@@ -134,6 +137,7 @@
             </p>
           </v-card>
         </v-col>
+
         <v-col cols="12" xl="6" lg="6" md="6" sm="6">
           <v-card
             max-width="400"

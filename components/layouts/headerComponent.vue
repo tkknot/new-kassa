@@ -24,9 +24,12 @@
       <v-container fluid>
         <v-row no-gutters>
           <v-col cols="12" xl="5" lg="5" md="5" sm="5">
+            <!-- header left -->
             <v-img src="/img/logo-new.jpeg" :height="headerHeight"></v-img>
           </v-col>
+
           <v-col cols="12" xl="7" lg="7" md="7" sm="7" id="ccbox">
+            <!-- header right -->
             <span
               id="catchcopy"
               class="text-xl-h2 text-lg-h2 text-md-h2 text-sm-h5 text-center"
@@ -39,6 +42,26 @@
     </v-app-bar>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      drawer: null
+    };
+  },
+  computed: {
+    headerHeight: function() {
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 240;
+        default:
+          return 340;
+      }
+    }
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 #ccbox {
@@ -67,23 +90,3 @@
   }
 }
 </style>
-
-<script>
-export default {
-  data() {
-    return {
-      drawer: null
-    };
-  },
-  computed: {
-    headerHeight: function() {
-      switch (this.$vuetify.breakpoint.name) {
-        case "xs":
-          return 240;
-        default:
-          return 340;
-      }
-    }
-  }
-};
-</script>

@@ -23,15 +23,39 @@
     </v-container>
 
     <v-container class="mb-10">
-      <v-col cols="12" xl="4" lg="4" md="4" sm="4" class="mx-auto">
-        <v-card color="white" elevation="8">
-          <h2 class="text-center py-7">施術料</h2>
-          <div class="text-center">
-            <i class="fas fa-wallet fa-5x pb-3"></i>
-          </div>
-          <v-card-text class="text-center text-h6"> 21000円</v-card-text>
-        </v-card>
-      </v-col>
+      <v-row>
+        <v-col cols="12" xl="4" lg="4" md="4" sm="4">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
+            <h2 class="text-center py-7">所要時間</h2>
+            <div class="text-center">
+              <i class="far fa-clock fa-5x pb-3"></i>
+            </div>
+            <v-card-text class="text-center text-h6">
+              約3時間 カウンセリング＋施術
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="12" xl="4" lg="4" md="4" sm="4">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
+            <h2 class="text-center py-7">施術料</h2>
+            <div class="text-center">
+              <i class="fas fa-wallet fa-5x pb-3"></i>
+            </div>
+            <v-card-text class="text-center text-h6">18000円 現金のみ</v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="12" xl="4" lg="4" md="4" sm="4">
+          <v-card color="white" elevation="8" :height="threeCardBreakPoint">
+            <h2 class="text-center py-7">誕生月割引！</h2>
+            <div class="text-center">
+              <i class="fas fa-birthday-cake fa-5x pb-3"></i>
+            </div>
+            <v-card-text class="text-center text-h6">2000円引き</v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>

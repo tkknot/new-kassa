@@ -36,7 +36,7 @@
               <i class="far fa-clock fa-5x pb-3"></i>
             </div>
             <v-card-text class="text-center text-h6">
-              約3時間 カウンセリング＋施術
+              約2時間30分 カウンセリング＋施術
             </v-card-text>
           </v-card>
         </v-col>
@@ -47,7 +47,7 @@
             <div class="text-center">
               <i class="fas fa-wallet fa-5x pb-3"></i>
             </div>
-            <v-card-text class="text-center text-h6">18000円</v-card-text>
+            <v-card-text class="text-center text-h6">10000円 現金のみ</v-card-text>
           </v-card>
         </v-col>
 

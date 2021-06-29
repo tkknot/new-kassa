@@ -2,7 +2,10 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
 <template>
   <div>
     <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+      class="
+        text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4
+        my-12
+      "
     >
       フェイスかっさトリートメント
     </h1>
@@ -15,15 +18,21 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
-              一度の施術で効果を実感できる、お顔のかっさです。
+            一度の施術で効果を実感できる、お顔のかっさです。
           </p>
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
             お顔のコリをほぐすことで様々な効果が期待できます。
           </p>
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
-            施術箇所: 背中、お顔、マスク、頭
+            施術内容: 背中・お顔・頭のかっさ、マスク（パック）
           </p>
-          <ul class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 pb-3 font-weight-lighter">
+          <ul
+            class="
+              text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8
+              pb-3
+              font-weight-lighter
+            "
+          >
             <li>小顔</li>
             <li>リフトアップ</li>
             <li>眼精疲労</li>
@@ -43,7 +52,7 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
               <i class="far fa-clock fa-5x pb-3"></i>
             </div>
             <v-card-text class="text-center text-h6">
-              約3時間 カウンセリング＋施術
+              約2時間30分 カウンセリング＋施術
             </v-card-text>
           </v-card>
         </v-col>
@@ -54,7 +63,7 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
             <div class="text-center">
               <i class="fas fa-wallet fa-5x pb-3"></i>
             </div>
-            <v-card-text class="text-center text-h6">18000円</v-card-text>
+            <v-card-text class="text-center text-h6">10000円</v-card-text>
           </v-card>
         </v-col>
 
@@ -71,7 +80,10 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
     </v-container>
 
     <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+      class="
+        text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4
+        my-12
+      "
     >
       フェイス施術の流れ
     </h1>
@@ -91,7 +103,11 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
               max-width="400"
             ></v-img>
             <p
-              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
+              class="
+                text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8
+                px-5
+                pt-2
+              "
             >
               必要事項をシートにご記入いただき、カウンセリングをしていきます。<br />
               その後、五臓に合わせた5種類のメディカルアロマオイルの中から、
@@ -113,7 +129,11 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
               max-width="400"
             ></v-img>
             <p
-              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
+              class="
+                text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8
+                px-5
+                pt-2
+              "
             >
               五臓の調整のため、<br />
               首～背中のかっさをします
@@ -138,10 +158,14 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
               max-width="400"
             ></v-img>
             <p
-              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
+              class="
+                text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8
+                px-5
+                pt-2
+              "
             >
-                            リンパ節を開き、<br />
-              クレンジング→整肌→フェイスカッサ<br />
+              リンパ節を開き、<br />
+              クレンジング→整肌→フェイスかっさ<br />
               →パック→頭のかっさ<br />
               で終了です。
             </p>
@@ -157,7 +181,11 @@ import footerComponent from '~/components/layouts/footerComponent.vue';
           >
             <v-img src="/img/tea.jpeg" max-height="300" max-width="400"></v-img>
             <p
-              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
+              class="
+                text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8
+                px-5
+                pt-2
+              "
             >
               施術後はかっさとの相乗効果を考えた
               「かっさyuuオリジナル和漢植物ブレンド茶」（いわしや製）
@@ -188,7 +216,7 @@ export default {
         default:
           return 500;
       }
-    }
-  }
+    },
+  },
 };
 </script>

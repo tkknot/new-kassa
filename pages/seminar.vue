@@ -57,7 +57,7 @@
             <div class="text-center">
               <i class="fas fa-wallet fa-5x pb-3"></i>
             </div>
-            <v-card-text class="text-center text-h6">13000円</v-card-text>
+            <v-card-text class="text-center text-h6">13000円 現金のみ</v-card-text>
           </v-card>
         </v-col>
 

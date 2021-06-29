@@ -1,18 +1,65 @@
 <template>
   <div>
     <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+      class="
+        text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4
+        my-12
+      "
     >
       セラピストの紹介
     </h1>
 
     <v-container class="mb-10">
       <h2
-        class="font-weight-bold mb-12 text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6 font-weight-normal"
+        class="
+          font-weight-bold
+          mb-3
+          text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6
+          font-weight-normal
+        "
       >
-        日本かっさ協会認定<br id="br" />
-        温かっさセラピスト <br id="br" />ボディかっさアドバイザー
+        日本かっさ協会認定<br />
       </h2>
+
+      <v-container class="mb-10">
+        <v-row>
+          <v-col cols="12" xl="6" lg="6" md="6" sm="6">
+            <v-card color="white" elevation="8" :height="fourCardBreakPoint">
+              <h2 class="text-center py-7">温かっさセラピスト</h2>
+              <div class="text-center">
+                <i class="far fa-heart fa-5x pb-3"></i>
+              </div>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" xl="6" lg="6" md="6" sm="6">
+            <v-card color="white" elevation="8" :height="fourCardBreakPoint">
+              <h2 class="text-center py-7">フェイスかっさセラピスト</h2>
+              <div class="text-center">
+                <i class="far fa-smile-beam fa-5x pb-3"></i>
+              </div>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" xl="6" lg="6" md="6" sm="6">
+            <v-card color="white" elevation="8" :height="fourCardBreakPoint">
+              <h2 class="text-center py-7">ボディかっさセラピスト</h2>
+              <div class="text-center">
+                <i class="fas fa-child fa-5x pb-3"></i>
+              </div>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" xl="6" lg="6" md="6" sm="6">
+            <v-card color="white" elevation="8" :height="fourCardBreakPoint">
+              <h2 class="text-center py-7">かっさホームケアアドバイザー</h2>
+              <div class="text-center">
+                <i class="fas fa-house-user fa-5x pb-3"></i>
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
 
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
@@ -21,7 +68,11 @@
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
           <h2
-            class="mb-10 text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6 font-weight-bold"
+            class="
+              mb-10
+              text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6
+              font-weight-bold
+            "
           >
             武田　絵美
           </h2>
@@ -38,7 +89,11 @@
 
     <v-container class="mb-10">
       <h2
-        class="mb-8  text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6 font-weight-bold"
+        class="
+          mb-8
+          text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6
+          font-weight-bold
+        "
       >
         セラピストより
       </h2>
@@ -60,3 +115,18 @@
     </v-container>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    fourCardBreakPoint() {
+      switch (this.$vuetify.breakpoint.name) {
+        case "xs":
+          return 260;
+        default:
+          return 200;
+      }
+    },
+  },
+};
+</script>

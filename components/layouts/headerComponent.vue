@@ -11,6 +11,9 @@
         <v-list-item nuxt to="/therapist" class="my-4">セラピスト</v-list-item>
         <v-list-item nuxt to="/heat" class="my-4">温かっさ</v-list-item>
         <v-list-item nuxt to="/seminar" class="my-4">セルフかっさ</v-list-item>
+        <v-list-item nuxt to="/face" class="my-4">フェイスかっさ</v-list-item>
+        <v-list-item nuxt to="/option" class="my-4">オプション</v-list-item>
+        <v-list-item nuxt to="/special" class="my-4">スペシャルコース</v-list-item>
         <v-list-item nuxt to="/caution" class="my-4">注意事項</v-list-item>
       </v-list>
     </v-navigation-drawer>

@@ -81,3 +81,7 @@ export default {
     fallback: true
   }
 };
+
+module.exports = {
+  modules: ["@nuxtjs/vuetify"]
+};

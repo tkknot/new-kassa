@@ -1,28 +1,35 @@
+import footerComponent from '~/components/layouts/footerComponent.vue';
 <template>
   <div>
     <h1
       class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
     >
-      温かっさトリートメント
+      フェイスかっさトリートメント
     </h1>
 
     <v-container class="my-10">
       <v-row>
         <v-col cols="12" xl="5" lg="5" class="mx-auto">
-          <v-img src="/img/L0A0002.jpeg" class="rounded-xl"> </v-img>
+          <v-img src="/img/face.jpeg" class="rounded-xl"> </v-img>
         </v-col>
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
-            温めたかっさプレートを使って、身体の芯から温めながら全身を施術する、100分のトリートメントです。
+              一度の施術で効果を実感できる、お顔のかっさです。
           </p>
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
-            温かいトリートメントですが、女性特有のお悩みにアプローチできる温かっさは、季節を問わず人気です。
+            お顔のコリをほぐすことで様々な効果が期待できます。
           </p>
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
-            また、かっさプレートの心地良い温かさは、心をゆるめ、<br />
-            経絡に沿ってじっくり施術することで、リラクゼーション以上の満足感を得ることが期待できます。
+            施術箇所: 背中、お顔、マスク、頭
           </p>
+          <ul class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 pb-3 font-weight-lighter">
+            <li>小顔</li>
+            <li>リフトアップ</li>
+            <li>眼精疲労</li>
+            <li>肌のトーンアップ</li>
+            <li>シワ・ほうれい線の改善</li>
+          </ul>
         </v-col>
       </v-row>
     </v-container>
@@ -66,7 +73,7 @@
     <h1
       class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
     >
-      施術の流れ
+      フェイス施術の流れ
     </h1>
 
     <v-container class="mb-10">
@@ -101,14 +108,15 @@
             :height="workCardBreakPoint"
           >
             <v-img
-              src="/img/IMG_0075.jpeg"
+              src="/img/below.jpeg"
               max-height="300"
               max-width="400"
             ></v-img>
             <p
               class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
             >
-              サロンでご用意したウェアに着替えていただきます。
+              五臓の調整のため、<br />
+              首～背中のかっさをします
             </p>
           </v-card>
         </v-col>
@@ -125,14 +133,17 @@
             :height="workCardBreakPoint"
           >
             <v-img
-              src="/img/workflow2.jpeg"
+              src="/img/dekolte.jpeg"
               max-height="300"
               max-width="400"
             ></v-img>
             <p
               class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8 px-5 pt-2"
             >
-              頭頂部から足先まで、約100分の施術を行います。
+                            リンパ節を開き、<br />
+              クレンジング→整肌→フェイスカッサ<br />
+              →パック→頭のかっさ<br />
+              で終了です。
             </p>
           </v-card>
         </v-col>

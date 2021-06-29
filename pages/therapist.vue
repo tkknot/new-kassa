@@ -43,7 +43,7 @@
 
           <v-col cols="12" xl="6" lg="6" md="6" sm="6">
             <v-card color="white" elevation="8" :height="fourCardBreakPoint">
-              <h2 class="text-center py-7">ボディかっさセラピスト</h2>
+              <h2 class="text-center py-7">ボディかっさアドバイザー</h2>
               <div class="text-center">
                 <i class="fas fa-child fa-5x pb-3"></i>
               </div>

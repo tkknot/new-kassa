@@ -1,7 +1,10 @@
 <template>
   <div>
     <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+      class="
+        text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4
+        my-12
+      "
     >
       刮痧について
     </h1>
@@ -46,7 +49,10 @@
     </v-container>
 
     <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+      class="
+        text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4
+        my-12
+      "
     >
       サロンについて
     </h1>
@@ -78,7 +84,10 @@
     </v-container>
 
     <h1
-      class="text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4 my-12"
+      class="
+        text-center text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3 text-h4
+        my-12
+      "
     >
       施術について
     </h1>
@@ -91,7 +100,10 @@
 
         <v-col cols="12" xl="7" lg="7" class="pl-8">
           <h2
-            class="text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6 font-weight-bold"
+            class="
+              text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6
+              font-weight-bold
+            "
           >
             ①温かっさトリートメント
           </h2>
@@ -100,7 +112,10 @@
             100分のトリートメント。
           </p>
           <h2
-            class="text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6 font-weight-bold"
+            class="
+              text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6
+              font-weight-bold
+            "
           >
             ②セルフかっさセミナー
           </h2>
@@ -112,6 +127,44 @@
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
             どちらも１日１名様の受付となります。<br />
             詳しくはメニューを御覧ください。
+          </p>
+        </v-col>
+        <v-col cols="12" xl="7" lg="7" class="pl-8">
+          <h2
+            class="
+              text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6
+              font-weight-bold
+            "
+          >
+            ③フェイスかっさトリートメント
+          </h2>
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
+            小顔ケアで有名なフェイスかっさ。
+          </p>
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
+            日本かっさ協会のオリジナルメソッドです。
+          </p>
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
+            お顔の筋肉をほぐし、柔らかくすることで、笑いやすくなり、<br />
+            くすみの取れた明るい吉相へと導きます。
+          </p>
+          <h2
+            class="
+              text-xl-h5 text-lg-h5 text-md-h5 text-sm-h5 text-h6
+              font-weight-bold
+            "
+          >
+            ④スペシャルコース
+          </h2>
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
+            温かっさ・フェイスかっさ・ハンドトリートメントが<br />
+            セットになったコースです。
+          </p>
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
+            全身の経路かっさは、お顔の顔の施術目安にもなります。
+          </p>
+          <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
+            健康と美容ケアを一度にされたい方にオススメです。
           </p>
         </v-col>
       </v-row>
@@ -149,8 +202,8 @@ export default {
         duration: 2,
         scrollTrigger: {
           trigger: "#reveal-1",
-          start: "top center"
-        }
+          start: "top center",
+        },
       });
     },
     scrollSet2() {
@@ -163,8 +216,8 @@ export default {
         duration: 2,
         scrollTrigger: {
           trigger: "#reveal-2",
-          start: "top center"
-        }
+          start: "top center",
+        },
       });
     },
     scrollSet3() {
@@ -177,10 +230,10 @@ export default {
         duration: 3,
         scrollTrigger: {
           trigger: "#reveal-3",
-          start: "top center"
-        }
+          start: "top center",
+        },
       });
-    }
-  }
+    },
+  },
 };
 </script>

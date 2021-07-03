@@ -161,7 +161,7 @@
             セットになったコースです。
           </p>
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
-            全身の経路かっさは、お顔の顔の施術目安にもなります。
+            全身の経路かっさは、お顔の施術目安にもなります。
           </p>
           <p class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-h8">
             健康と美容ケアを一度にされたい方にオススメです。
